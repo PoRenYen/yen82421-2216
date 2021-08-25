@@ -15,7 +15,9 @@
 </head>
 
 <body>
-    <?php require_once 'tpl/head.inc.php' ?>
+    <?php require_once 'tpl/head.inc.php'
+
+    ?>
 
     <!-- content -->
 
@@ -77,8 +79,10 @@
 
 
             $.post("./change_password_api.php", {
-                    email: "hohoho@raw.com",
-                    password: '5678'
+                    email: "mmmh61raw@gmail.com", //先寫死
+                    password: $('input.codeinputwrap').val()
+                    // email: $_POST['email']
+                    // password: $_GOT['myinput2'],
                 })
                 .done(function(data) {
                     alert("Data Loaded: " + JSON.stringify(data));

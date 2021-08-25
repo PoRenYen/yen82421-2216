@@ -22,7 +22,7 @@ $mail->AddAddress($_GET['email'], $_GET['name']);
 $mail->SetFrom("RAW@gmail.com", "寄件者-RAW團隊");
 // $mail->AddReplyTo("reply-to-email@domain", "reply-to-name");
 // $mail->AddCC("cc-recipient-email@domain", "cc-recipient-name");
-$mail->Subject = "測試我的 PHP 寄信功能";
+$mail->Subject = "RAW會員忘記密碼驗證信";
 $content = "會員驗證: <a href='./localhost/yen8232235/change_password.php?email=" . $_GET['email']  .   "' target='_blank'>按我啟用</a>";
 // $content = "會員驗證: <a href='http://localhost/raw/verify.php?verified_code=dae44e1a4b2cd0bc49b7f9fcc5cff556' target='_blank'>按我啟用</a>";
 $mail->MsgHTML($content);

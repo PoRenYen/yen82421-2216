@@ -64,8 +64,7 @@
 
 
             $.get("./phpmail.php", {
-                    name: "John",
-                    email: "ak101mryen@gmail.com"
+                    email: $('input.mailinputwrap').val()
                 })
                 .done(function(data) {
                     alert("Data Loaded: " + '登入成功');
